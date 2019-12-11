@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <!-- next line from BS site for mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renewable Energy Analysis</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <!-- this was part of the above line in instrutor demo: 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color:lightgray;">
+
+<div>
+
+<!-- example 7 - center on mobile 2-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-flex flex-grow-1">
+        <!--hidden spacer to center brand on mobile: <span class="w-100 d-lg-none d-block"></span> -->
+        <!-- modified color below instead of CSS where wasn't working -->
+        <a class="navbar-brand" href="#" style="color: black"   >
+            Renewable Energy Analysis
+        </a>
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+            <li class="nav-item dropdown">
+                <!-- modified colors below instead of CSS where wasn't working -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Annual</a>
+                  <a class="dropdown-item" href="#">Hourly</a>
+                  <a class="dropdown-item" href="#">2012 vs 2017</a>
+                  <a class="dropdown-item" href="#">Peak Demand</a>
+  
+                </div>
+              </li>
+          
+            <!-- modified colors below instead of CSS where wasn't working -->
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: white">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: white;">Data</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+
+
+<!-- need a grey background (was in an exercise on box locations)
+need two containers - lg 8/4, small would be just 8?
+within 8 box is a header line across 12
+then an image across 3 with text wrap to right as well as below image
+
+within 4 box is a title across the top and a small 2x2 grid of each chart images, 
+then  -->
+
+  <!-- <header>
+    <h1>Student Bio</h1>
+  </header> -->
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name"><br> Here Comes the Sun: Renewable Energy Production in California</h2>
+        <br>
+        <img id="bio-image" src="Visualizations/renewables_yearly.png" alt="Your Name">
+      </section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum risus ut justo laoreet consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dui neque, malesuada egestas aliquet ac, commodo in magna. Etiam mollis odio at mi maximus hendrerit. Integer aliquam id lectus nec hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris rhoncus eget nulla in ornare. Maecenas massa nibh, commodo non condimentum eu, congue tempus neque. Donec neque mi, ullamcorper eget fringilla et, iaculis vitae tortor. Curabitur vel nunc vel mi lobortis ornare ut non nulla. Etiam ornare libero ac suscipit aliquam. Nunc venenatis felis sit amet velit vehicula interdum. Vivamus iaculis condimentum nulla vitae dapibus.</p>
+    </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- js required for some components (dropdowns) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
