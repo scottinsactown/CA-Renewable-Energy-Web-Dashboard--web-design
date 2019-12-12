@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <!-- next line from BS site for mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renewable Energy Analysis: Data</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <!-- this was part of the above line in instrutor demo: 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body style="background-color:lightgray;">
+
+    <div>
+    
+    <!-- NAVBAR -->
+    
+    <!-- example 7 - center on mobile 2-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="d-flex flex-grow-1">
+            <!--hidden spacer to center brand on mobile: <span class="w-100 d-lg-none d-block"></span> -->
+            <a class="navbar-brand" href="index.html"  >
+                <strong> Energy Analysis</strong>
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+              
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="hourly.html">Hourly</a>
+                      <a class="dropdown-item" href="monthly.html">Monthly</a>
+                      <a class="dropdown-item" href="annual.html">Annual</a>
+                      <a class="dropdown-item" href="total_2017.html">Total</a>
+      
+                    </div>
+                  </li>
+              
+                <!-- modified colors below instead of CSS where wasn't working -->
+                <li class="nav-item">
+                    <a href="comparison.html" class="nav-link" style="color: white">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a href="data.html" class="nav-link" style="color: white;">Data</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    <br>
+      <p>Scott Clark | Data Analytics | December 2019</p>
+    </div>
+
+  <!-- js required for some components (dropdowns) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

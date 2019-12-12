@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <!-- next line from BS site for mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Renewable Energy Analysis</title>
+  <title>Renewable Energy Analysis: Home</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -20,7 +20,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="d-flex flex-grow-1">
         <!--hidden spacer to center brand on mobile: <span class="w-100 d-lg-none d-block"></span> -->
-        <a class="navbar-brand" href="#"  >
+        <a class="navbar-brand" href="index.html"  >
             <strong> Energy Analysis</strong>
         </a>
         <div class="w-100 text-right">
@@ -39,20 +39,20 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="hourly.html">Hourly</a>
+                  <a class="dropdown-item" href="monthly.html">Monthly</a>
                   <a class="dropdown-item" href="annual.html">Annual</a>
-                  <a class="dropdown-item" href="#">Hourly</a>
-                  <a class="dropdown-item" href="#">2012 vs 2017</a>
-                  <a class="dropdown-item" href="#">Peak Demand</a>
+                  <a class="dropdown-item" href="total_2017.html">Total</a>
   
                 </div>
               </li>
           
             <!-- modified colors below instead of CSS where wasn't working -->
             <li class="nav-item">
-                <a href="#" class="nav-link" style="color: white">Comparison</a>
+                <a href="comparison.html" class="nav-link">Comparison</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link" style="color: white;">Data</a>
+                <a href="data.html" class="nav-link">Data</a>
             </li>
             
         </ul>
@@ -62,113 +62,83 @@
 <!-- LEFT BOX -->
 
 <div class="row">
-    <div class="col-md-7 rounded" style="
-    background-color: white;
-    top: 25px;
-    /* padding-right: 15px; */
-    /* left: 0px; */
-    /* border-bottom-width: 15px; */
-    margin-left: 25px;
-    margin-right: 1px;
-    margin-bottom: 25px;
-    "
-    >  
+    <div class="col-md-7 rounded">  
 
     <section>
         <section>
-          <h4>Here Comes the Sun:<br> Renewable Energy Production in California</h4>
+          <h4>Renewable Energy Production in California</h4>
           <br>
           <!-- <figure> -->
-            <a href="#">          
+            <a href="annual.html">          
             <img id="image1" alt="Annual Renewable Energy Production" title="Annual Renewable Energy Production" 
-              src="Visualizations/renewables_yearly.png" 
-              style="max-width: 50%;
-              max-height:100%;
-              float: left;
-              padding-right: 25px;
-              margin-bottom: 25px;
-              ">
+              src="Visualizations/renewables_yearly.png">
             </a>
           <!-- </figure> -->
         </section>
       
-      <p>In 2011, California formalized a goal of 33% renewable energy production by 2020 and has since set additional growth targets for renewables for future years. This analysis presents California’s progress toward that goal. 
+          <p>In 2011, California formalized a goal of 33% renewable energy production by 2020 and has since set additional growth targets for renewables for future years. This analysis presents California’s progress toward that goal. 
             It also illustrates the patterns of availability over time, given that solar and wind in particular are dependent on weather, time of day, and season. Linking availability and demand, how renewables typically contribute toward demand generally and during times of peak demand is also explored. 
             <br><br>
-            The California Independent System Operator (CAISO) is the non-profit that oversees the operation of the bulk of California's electric power system, transmission lines, and electricity market. Our analysis is centered on CASIO data, which represents more than 80 percent of electricity in California. </p>
-    </section>
+            The California Independent System Operator (CAISO) is the non-profit that oversees the operation of the bulk of California's electric power system, transmission lines, and electricity market. This analysis is based on CASIO data, which provides more than 80 percent of electricity in California. 
+          <br><br>
+            The discussion and visuals shown here are adapted from a 2019 collaboration with Graham Penrose.
+            </p>
+          </section>
 
     </div>
+  
+<!-- RIGHT BOX  -->
+
+  <div class="col-md-4 rounded"> 
     
-  <div class="col-md-4 rounded" style="
-    top:25px; 
-    /* position: relative; */
-    /* padding-top: 15px; */
-    /* padding-left: 15px; */
-    /* padding-right: 15px; */
-    margin-left: 25px;
-    margin-right: 1px;
-    background-color: lightyellow;
-    margin-bottom: 25px;
-"> <h4>Visualizations</h4> 
+    <h4>Visualizations</h4> 
 
   <div class="row">
-      <!-- for 2x2 look use <div class="col-xs-6 col-sm-3 col-md-6"> -->
+      <!-- for 2x2 look use: <div class="col-xs-6 col-sm-3 col-md-6"> -->
     <div class="col-md-12" >
       <figure> 
-        <a href="#">
-          <img alt="Annual Renewable Energy Production" title="Annual Renewable Energy Production" src="Visualizations/renewables_yearly.png" alt="test" style="max-width: 75%; 
-          max-height:100%;" class="center">
+        <a href="annual.html">
+          <img id="image2" alt="Annual Renewable Energy Production" title="Annual Renewable Energy Production" 
+          src="Visualizations/renewables_yearly.png" alt="test" class="center">
         </a>
       </figure>
     </div>
 
     <div class="col-md-12">
         <figure>
-            <a href="#">
-              <img alt="Wind & Solar Hourly Production" title="Wind & Solar Hourly Production" src="Visualizations/wind_solar_hourly.png" alt="test" style="max-width: 100%;
-              max-height:100%;" class="center">
+            <a href="hourly.html">
+              <img id="image2" alt="Wind & Solar Hourly Production" title="Wind & Solar Hourly Production" 
+              src="Visualizations/wind_solar_hourly.png" alt="test" class="center">
             </a>
           </figure>
     </div>
 
     <div class="col-md-12">
         <figure>
-            <a href="#">
-              <img alt="Monthly Renewable Energy Production 2011 vs 2017" title="Monthly Renewable Energy Production 2011 vs 2017" src="Visualizations/renewables_monthly.png" alt="test" style="max-width: 100%;
-              max-height:100%;" class="center">
+            <a href="monthly.html">
+              <img id="image2" alt="Monthly Renewable Energy Production 2011 vs 2017" title="Monthly Renewable Energy Production 2011 vs 2017" 
+              src="Visualizations/renewables_monthly.png" alt="test" class="center">
             </a>
           </figure>
     </div>
 
     <div class="col-md-12">
         <figure>
-            <a href="#">
-              <img alt="Total Monthly Energy Poduction 2017" title="Total Monthly Energy Poduction 2017" src="Visualizations/renewables_2017.png" style="max-width: 100%;
-              max-height:100%;" class="center">
+            <a href="total_2017.html">
+              <img id="image2" alt="Total Monthly Energy Poduction 2017" title="Total Monthly Energy Poduction 2017" 
+              src="Visualizations/renewables_2017.png" class="center">
             </a>
           </figure>
     </div>
   </div>
 </div>
 
+<!-- FOOTER -->
+
 <div class="footer">
   <br>
     <p>Scott Clark | Data Analytics | December 2019</p>
   </div>
-
-<!-- <div class="row">
-    <div class="col-md-12" >
-    <footer style="background-color: blue; text-align: center;">
-      <p>testing</p>
-    </footer>
-</div> -->
-
-<!-- <div class="card">
-     <div class="card-body">
-           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </div>
-  </div> -->
 
   <!-- js required for some components (dropdowns) -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
