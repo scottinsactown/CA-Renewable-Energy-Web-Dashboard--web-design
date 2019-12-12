@@ -14,6 +14,8 @@
 
 <div>
 
+<!-- NAVBAR -->
+
 <!-- example 7 - center on mobile 2-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="d-flex flex-grow-1">
@@ -57,9 +59,10 @@
     </div>
 </nav>
 
+<!-- LEFT BOX -->
 
 <div class="row">
-    <div class="col-md-7" style="
+    <div class="col-md-7 rounded" style="
     background-color: white;
     top: 25px;
     /* padding-right: 15px; */
@@ -69,32 +72,35 @@
     margin-right: 1px;
     margin-bottom: 25px;
     "
-    
-    
     >  
+
     <section>
         <section>
-          <h4><Here Comes the Sun:<br> Renewable Energy Production in California</h4>
+          <h4>Here Comes the Sun:<br> Renewable Energy Production in California</h4>
           <br>
-          <!-- add hover image name below -->
-          <img id="image1" src="Visualizations/renewables_yearly.png" style="max-width: 50%;
-          max-height:100%;
-          float: left;
-          padding-right: 15px;
-          margin-bottom: 25px;
-">
-      </section>
+          <!-- <figure> -->
+            <a href="#">          
+            <img id="image1" alt="Annual Renewable Energy Production" title="Annual Renewable Energy Production" 
+              src="Visualizations/renewables_yearly.png" 
+              style="max-width: 50%;
+              max-height:100%;
+              float: left;
+              padding-right: 25px;
+              margin-bottom: 25px;
+              ">
+            </a>
+          <!-- </figure> -->
+        </section>
       
       <p>In 2011, California formalized a goal of 33% renewable energy production by 2020 and has since set additional growth targets for renewables for future years. This analysis presents California’s progress toward that goal. 
             It also illustrates the patterns of availability over time, given that solar and wind in particular are dependent on weather, time of day, and season. Linking availability and demand, how renewables typically contribute toward demand generally and during times of peak demand is also explored. 
             <br><br>
-            The discussion and visuals here are adapted from a 2019 analysis developed in conjunction with Graham Penrose.
-      </p>
+            The California Independent System Operator (CAISO) is the non-profit that oversees the operation of the bulk of California's electric power system, transmission lines, and electricity market. Our analysis is centered on CASIO data, which represents more than 80 percent of electricity in California. </p>
     </section>
 
     </div>
     
-  <div class="col-md-4" style="
+  <div class="col-md-4 rounded" style="
     top:25px; 
     /* position: relative; */
     /* padding-top: 15px; */
@@ -105,10 +111,56 @@
     background-color: lightyellow;
     margin-bottom: 25px;
 "> <h4>Visualizations</h4> 
+
+  <div class="row">
+      <!-- for 2x2 look use <div class="col-xs-6 col-sm-3 col-md-6"> -->
+    <div class="col-md-12" >
+      <figure> 
+        <a href="#">
+          <img alt="Annual Renewable Energy Production" title="Annual Renewable Energy Production" src="Visualizations/renewables_yearly.png" alt="test" style="max-width: 75%; 
+          max-height:100%;" class="center">
+        </a>
+      </figure>
+    </div>
+
+    <div class="col-md-12">
+        <figure>
+            <a href="#">
+              <img alt="Wind & Solar Hourly Production" title="Wind & Solar Hourly Production" src="Visualizations/wind_solar_hourly.png" alt="test" style="max-width: 100%;
+              max-height:100%;" class="center">
+            </a>
+          </figure>
+    </div>
+
+    <div class="col-md-12">
+        <figure>
+            <a href="#">
+              <img alt="Monthly Renewable Energy Production 2011 vs 2017" title="Monthly Renewable Energy Production 2011 vs 2017" src="Visualizations/renewables_monthly.png" alt="test" style="max-width: 100%;
+              max-height:100%;" class="center">
+            </a>
+          </figure>
+    </div>
+
+    <div class="col-md-12">
+        <figure>
+            <a href="#">
+              <img alt="Total Monthly Energy Poduction 2017" title="Total Monthly Energy Poduction 2017" src="Visualizations/renewables_2017.png" style="max-width: 100%;
+              max-height:100%;" class="center">
+            </a>
+          </figure>
+    </div>
+  </div>
 </div>
 
-<!-- <div class="container-fluid">
-    <footer style="background-color: blue">
+<div class="footer">
+  <br>
+    <p>Scott Clark | Data Analytics | December 2019</p>
+  </div>
+
+<!-- <div class="row">
+    <div class="col-md-12" >
+    <footer style="background-color: blue; text-align: center;">
+      <p>testing</p>
     </footer>
 </div> -->
 
