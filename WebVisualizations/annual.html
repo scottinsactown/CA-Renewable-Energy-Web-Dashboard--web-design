@@ -7,6 +7,8 @@
   <title>Renewable Energy Analysis</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <!-- this was part of the above line in instrutor demo: 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -18,7 +20,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="d-flex flex-grow-1">
         <!--hidden spacer to center brand on mobile: <span class="w-100 d-lg-none d-block"></span> -->
-        <a class="navbar-brand" href="#"  >
+        <!-- modified color below instead of CSS where wasn't working - how to overrule body-->
+        <a class="navbar-brand" href="energy.html"  >
             <strong> Energy Analysis</strong>
         </a>
         <div class="w-100 text-right">
@@ -31,11 +34,13 @@
         <ul class="navbar-nav ml-auto flex-nowrap">
           
             <li class="nav-item dropdown">
+                <!-- modified colors below instead of CSS where wasn't working -->
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plots
                 </a>
 
+                <!-- insert active into annual -->
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="annual.html">Annual</a>
                   <a class="dropdown-item" href="#">Hourly</a>
@@ -58,65 +63,7 @@
 </nav>
 
 
-<div class="row">
-    <div class="col-md-7" style="
-    background-color: white;
-    top: 25px;
-    /* padding-right: 15px; */
-    /* left: 0px; */
-    /* border-bottom-width: 15px; */
-    margin-left: 25px;
-    margin-right: 1px;
-    margin-bottom: 25px;
-    "
-    
-    
-    >  
-    <section>
-        <section>
-          <h4><Here Comes the Sun:<br> Renewable Energy Production in California</h4>
-          <br>
-          <!-- add hover image name below -->
-          <img id="image1" src="Visualizations/renewables_yearly.png" style="max-width: 50%;
-          max-height:100%;
-          float: left;
-          padding-right: 15px;
-          margin-bottom: 25px;
-">
-      </section>
-      
-      <p>In 2011, California formalized a goal of 33% renewable energy production by 2020 and has since set additional growth targets for renewables for future years. This analysis presents California’s progress toward that goal. 
-            It also illustrates the patterns of availability over time, given that solar and wind in particular are dependent on weather, time of day, and season. Linking availability and demand, how renewables typically contribute toward demand generally and during times of peak demand is also explored. 
-            <br><br>
-            The discussion and visuals here are adapted from a 2019 analysis developed in conjunction with Graham Penrose.
-      </p>
-    </section>
 
-    </div>
-    
-  <div class="col-md-4" style="
-    top:25px; 
-    /* position: relative; */
-    /* padding-top: 15px; */
-    /* padding-left: 15px; */
-    /* padding-right: 15px; */
-    margin-left: 25px;
-    margin-right: 1px;
-    background-color: lightyellow;
-    margin-bottom: 25px;
-"> <h4>Visualizations</h4> 
-</div>
-
-<!-- <div class="container-fluid">
-    <footer style="background-color: blue">
-    </footer>
-</div> -->
-
-<!-- <div class="card">
-     <div class="card-body">
-           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </div>
-  </div> -->
 
   <!-- js required for some components (dropdowns) -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
