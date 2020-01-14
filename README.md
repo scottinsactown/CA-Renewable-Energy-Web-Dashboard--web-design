@@ -24,4 +24,4 @@ The website has a navigation menu that:
 * Provides two more links on the right: "Comparisons" which links to the comparisons page, and "Data" which links to the data page.
 * Is responsive (using media queries). 
 
-Website is deployed to GitHub pages.
+Website is deployed to GitHub pages: https://scottinsactown.github.io/Web-Design-Challenge/index
