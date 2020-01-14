@@ -1,3 +1,27 @@
 # Web-Design-Challenge
 
-I used our Energy Project instead of the Latitude data. Because of this, the webpages are intentionally different from the assignment in two ways. Since the visuals are landscape and not square, I did not set up a 2x2 grid in the visualization right-hand box as the images wound up being too small. I instead went with one image per row in the visualization box. In addition, the full dataset was very large and was impacting page load times. Instead, I included a subset of the data and provided a link at the bottom of the page to where the full dataset could be found. 
+A visualization dashboard website using charts and data from a past project on California renewable energy production. 
+7 pages total:
+
+* A land page containing:
+  * An explanation of the project.
+  * Links to each visualizations page.
+* Four visualiation pages, each with:
+  * A descriptive title and heading tag.
+  * The plot/visualization itself for the selected comparison.
+  * A paragraph describing the plot and its significance.
+* A comparison page that:
+  * Contains all of the visualizations on the same page so we can easily visually compare them.
+  * Uses a bootstrap grid for the visualizations.
+* A data page that:
+  * Displays a responsive table containing the data used in the visualizations.
+    * Uses a bootstrap table component.
+    * Data comes from a .csv file.
+    
+The website has a navigation menu that:
+* Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
+* Contains a dropdown on the right of the navbar named "Plots" which provides links to each individual visualization page.
+* Provides two more links on the right: "Comparisons" which links to the comparisons page, and "Data" which links to the data page.
+* Is responsive (using media queries). 
+
+Website is deployed to GitHub pages.
