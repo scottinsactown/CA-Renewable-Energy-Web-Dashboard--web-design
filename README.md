@@ -1,8 +1,8 @@
 # Web-Design-Challenge
 
 A visualization dashboard website using charts and data from a past project on California renewable energy production. 
-7 pages total:
 
+7 pages total:
 * A land page containing:
   * An explanation of the project.
   * Links to each visualizations page.
