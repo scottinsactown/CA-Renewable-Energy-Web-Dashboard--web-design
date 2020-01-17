@@ -1,6 +1,6 @@
-# Web-Design-Challenge
-
 A visualization dashboard website using charts and data from a past project on California renewable energy production. 
+
+![dashboard](https://github.com/scottinsactown/CA-Renewable-Energy-Web-Dashboard--web-design/blob/master/Visualizations/energy_webpage.JPG)
 
 7 pages total:
 * A land page containing:
