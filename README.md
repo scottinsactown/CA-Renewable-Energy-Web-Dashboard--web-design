@@ -2,6 +2,8 @@ A visualization dashboard website using charts and data from a past project on C
 
 ![dashboard](https://github.com/scottinsactown/CA-Renewable-Energy-Web-Dashboard--web-design/blob/master/Visualizations/energy_webpage.JPG)
 
+https://scottinsactown.github.io/CA-Renewable-Energy-Web-Dashboard--web-design/
+
 7 pages total:
 * A land page containing:
   * An explanation of the project.
